@@ -1,14 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-   <meta charset="UTF-8">
-   <!-- 适应手机浏览器屏幕 -->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>御宇科技</title>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>御宇科技</title>
+    <link rel="shortcut icon" href="https://groupprohead.gtimg.cn/56872201639149121/100?t=1695308211841" type="image/x-icon" />
+    <style>
+        /* 这里的样式让网页更好看 */
+        body {
+            /* 设置背景颜色为柔和的浅灰色 */
+            background-color: #f4f4f9;
+            
+            /* 核心布局技巧：在垂直和水平方向上居中所有内容 */
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 高度占满整个视口 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        .card {
+            /* 给卡片本身加个背景 */
+            background: white;
+            padding: 2rem;
+            border-radius: 15px; /* 圆角 */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 淡淡的阴影 */
+            text-align: center;
+            transition: transform 0.3s ease; /* 添加平滑过渡动画 */
+        }
+
+        /* 当鼠标放上去的时候，卡片会稍微浮动一点 */
+        .card:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer; /* 鼠标变成手型 */
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #357abd; /* 悬停变色 */
+        }
+body {
+    background-image: url('https://channel.qpic.cn/psc?/channel/AvLZLQSYTpQ45ga8*JLzvsQYe*K3kg.tnDdoL5BRUpv6ZC43t6iOpfQ6n4*YQPs7QwnWIUo4tlUNAJ5Yzw0VuaixvSRsnLOjAAsN4WxphB8!/c=&bo=QAZABgAQABADACU!&ek=1&t=8&tl=1'); /* 网络图片地址 */
+    background-position: center;     /* 图片居中 */
+    background-repeat: no-repeat;    /* 图片不重复 */
+    background-attachment: fixed;    /* 背景图固定，不随滚动条滚动 */
+  }
+    </style>
 </head>
 <body>
-   <h1>欢迎大家加入御宇频道！</h1>
-   <a href="https://pd.qq.com/s/4izv542cc" target="_self" title="点击加入">御宇QQ频道</a>
+
+    <!-- 网页的主体内容 -->
+    <div class="card">
+        <h1>你好呀！</h1>
+        <p>这里是御宇科技，<br>
+       欢迎一起来玩呀！ </p>
+        <button onclick="window.location.href='https://pd.qq.com/s/4izv542cc'" type="button">加入御宇QQ频道</button>
+    </div>
+
 </body>
 </html>
