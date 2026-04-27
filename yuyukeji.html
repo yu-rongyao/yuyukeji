@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>御宇科技</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0d0d0d 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 1rem;
+        }
+        .name { font-size: 2rem; font-weight: 700; }
+        .bio { color: rgba(255,255,255,0.7); margin-top: 0.5rem; }
+        .links { text-align: center; }
+        .link {
+            display: block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            text-decoration: none;
+            padding: 1.2rem 2rem;
+            margin: 0.5rem 0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .arrow { margin-left: 0.5rem; font-size: 1.2rem; }
+        .description {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="/yuyu.png" alt="御宇" class="avatar">
+            <h1 class="name">御宇</h1>
+            <p class="bio">心存御宇，淡然若水</p>
+        </div>
+        <div class="links">
+            <a href="https://example.com" class="link">
+                <span>御宇综合QQ频道</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://blog.example.com" class="link">
+                <span>QQ群（僵尸开炮用）</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
